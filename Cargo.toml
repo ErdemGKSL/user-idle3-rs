@@ -1,7 +1,7 @@
 [package]
-name = "user-idle2"
-version = "0.6.2"
-authors = ["Edwin Svensson <user_idle_rs@olback.net>", "pieterdd"]
+name = "user-idle3"
+version = "0.7.0"
+authors = ["Edwin Svensson <user_idle_rs@olback.net>", "pieterdd", "ErdemGKSL"]
 edition = "2021"
 description = "Get a user's idle time."
 license = "MIT OR Apache-2.0"
@@ -14,11 +14,14 @@ all-features = false
 [features]
 default = []
 evdev = ["dep:evdev"]
+wayland = ["dep:wayland-client", "dep:wayland-protocols"]
 
 [target.'cfg(target_os = "linux")'.dependencies]
 x11 = { version = "2.21", features = ["xlib", "xss"] }
 dbus = { version = "0.9" }
 evdev = { version = "0.12", optional = true }
+wayland-client = { version = "0.31", optional = true }
+wayland-protocols = { version = "0.32", features = ["staging", "client"], optional = true }
 
 [target.'cfg(target_os = "windows")'.dependencies]
 windows-sys = { version = "0.48.0", features = [
