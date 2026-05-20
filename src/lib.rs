@@ -7,7 +7,7 @@ See the [`README.md`](https://github.com/olback/user-idle-rs/blob/master/README.
 
 Example:
 ```
-use user_idle2::UserIdle;
+use user_idle3::UserIdle;
 let idle = UserIdle::get_time().unwrap();
 let idle_seconds = idle.as_seconds();
 let idle_minutes = idle.as_minutes();

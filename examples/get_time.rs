@@ -1,6 +1,6 @@
 use std::{thread::sleep, time::Duration};
 
-use user_idle2::UserIdle;
+use user_idle3::UserIdle;
 
 fn main() {
     loop {
