@@ -1,6 +1,6 @@
 # user-idle3
 
-This is a fork of [user-idle-rs](https://github.com/olback/user-idle-rs) (previously published as `user-idle2`), updated with Wayland support via the standard `ext-idle-notify-v1` protocol as well as evdev-based fallback tracking.
+This is a fork of [user-idle2](https://github.com/pieterdd/user-idle2-rs), which is itself a fork of [user-idle-rs](https://github.com/olback/user-idle-rs). The key differences introduced in this fork are native Wayland idle detection via the `ext-idle-notify-v1` protocol (`wayland` feature) and evdev-based input tracking as a broad Wayland fallback (`evdev` feature).
 
 | OS              | Supported |
 | --------------- | --------- |
