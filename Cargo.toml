@@ -1,6 +1,6 @@
 [package]
 name = "user-idle3"
-version = "0.7.2"
+version = "0.7.3"
 authors = ["Edwin Svensson <user_idle_rs@olback.net>", "pieterdd", "ErdemGKSL"]
 edition = "2021"
 description = "Get a user's idle time."
@@ -12,7 +12,7 @@ keywords = ["idle", "gui", "ui", "user", "afk"]
 all-features = false
 
 [features]
-default = []
+default = ["wayland"]
 evdev = ["dep:evdev"]
 wayland = ["dep:wayland-client", "dep:wayland-protocols"]
 
